@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { LightboxModule } from 'ngx-lightbox';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
@@ -10,6 +11,7 @@ import { SvgLogoComponent } from './top-bar/svg-logo/svg-logo.component';
 
 @NgModule({
   imports: [
+    LightboxModule,
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
